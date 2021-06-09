@@ -13,7 +13,8 @@ body {
 header {
   background-image: url('../images/soup.jpg');
   background-size: cover;
-  background-position: center bottom;
+  background-position: center -250px;
+  background-repeat: no-repeat;
   height: 500px;
   color: white;
   display: flex;
@@ -21,4 +22,34 @@ header {
   align-items: center;
   font-size: 400%;
   font-weight: 300;
+}
+
+section,
+hr {
+  width: 80%;
+}
+
+/* ### Class selectors ### */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ### ID selectors ### */
+
+#recipe {
+  margin-top: 100px;
+  font-size: 120%;
+}
+
+#recipe-info {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 35px 0;
+}
+
+#recipe-info img {
+  width: 40%;
 }
