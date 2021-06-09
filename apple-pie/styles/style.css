@@ -1,10 +1,12 @@
 /* ### Import Poppins-font from google ### */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 /* ### Type selectors ### */
 
 body {
+  margin: 0;
   font-family: 'Poppins';
 }
 
@@ -18,6 +20,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 400%;
+  font-weight: 300;
 }
 
 section,
@@ -33,21 +36,25 @@ ul {
   list-style-type: none;
 }
 
+/* ### Class selectors ### */
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* ### ID selectors ### */
+
 #recipe {
-  margin-top: 80px;
+  margin-top: 70px;
   font-size: 120%;
 }
 
 #recipe-info {
   display: flex;
   justify-content: center;
-  margin: 40px 0 25px;
+  margin: 35px 0 15px;
 }
 
 #recipe-info img {
@@ -70,9 +77,28 @@ ul {
 #cooking-info {
   display: flex;
   justify-content: center;
-  margin: 40px 0 25px;
+  margin: 35px 0 15px;
 }
 
 #cooking-info img {
   width: 40%;
+}
+
+#directions {
+  margin: 10px 0 70px;
+}
+
+#directions ol {
+  margin-top: 30px;
+  padding: 0 16px;
+  counter-reset: list;
+}
+
+#directions ol > li {
+  list-style: none;
+}
+
+#directions ol > li:before {
+  content: counter(list) ') ';
+  counter-increment: list;
 }
