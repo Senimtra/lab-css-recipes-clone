@@ -4,7 +4,6 @@
 
 body {
   font-family: 'Poppins';
-  background-color: darkgrey;
 }
 
 header {
@@ -17,4 +16,30 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 400%;
+}
+
+section,
+hr {
+  width: 80%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#recipe {
+  margin-top: 80px;
+  font-size: 120%;
+}
+
+#recipe-info {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 25px;
+}
+
+#recipe-info img {
+  width: 40%;
 }
