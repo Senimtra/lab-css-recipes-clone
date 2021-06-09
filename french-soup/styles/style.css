@@ -1,11 +1,24 @@
-h1,
-body,
-html,
-main {
+/* ### Import Poppins-font from google ### */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* ### Type selectors */
+
+body {
   margin: 0;
+  font-family: 'Poppins';
 }
 
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+header {
+  background-image: url('../images/soup.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 400%;
+  font-weight: 300;
 }
