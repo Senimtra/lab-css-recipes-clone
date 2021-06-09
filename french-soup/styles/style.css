@@ -29,6 +29,10 @@ hr {
   width: 80%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* ### Class selectors ### */
 
 .container {
@@ -51,5 +55,28 @@ hr {
 }
 
 #recipe-info img {
+  width: 40%;
+}
+
+#ingredients {
+  margin-top: 10px;
+}
+
+#ingredients ul li::before {
+  content: '- ';
+}
+
+#ingredients ul li {
+  position: relative;
+  left: -35px;
+}
+
+#cooking-info {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 20px;
+}
+
+#cooking-info img {
   width: 40%;
 }
