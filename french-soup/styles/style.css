@@ -44,7 +44,7 @@ ul {
 /* ### ID selectors ### */
 
 #recipe {
-  margin-top: 100px;
+  margin-top: 90px;
   font-size: 120%;
 }
 
@@ -79,4 +79,23 @@ ul {
 
 #cooking-info img {
   width: 40%;
+}
+
+#directions {
+  margin: 10px 0 80px;
+}
+
+#directions ol {
+  margin-top: 30px;
+  padding: 0 10px;
+  counter-reset: list;
+}
+
+#directions ol > li {
+  list-style: none;
+}
+
+#directions ol > li:before {
+  content: counter(list) ') ';
+  counter-increment: list;
 }
