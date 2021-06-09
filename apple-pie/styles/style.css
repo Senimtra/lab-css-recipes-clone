@@ -1,3 +1,20 @@
+/* ### Import Poppins-font from google ### */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
+  font-family: 'Poppins';
   background-color: darkgrey;
+}
+
+header {
+  background-image: url('../images/apple-pie.jpg');
+  background-size: cover;
+  background-position: center -75px;
+  height: 550px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 400%;
 }
