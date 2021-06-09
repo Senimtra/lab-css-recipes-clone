@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/* ### Type selectors ### */
+
 body {
   font-family: 'Poppins';
 }
@@ -23,6 +25,14 @@ hr {
   width: 80%;
 }
 
+hr {
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -41,5 +51,28 @@ hr {
 }
 
 #recipe-info img {
+  width: 40%;
+}
+
+#ingredients {
+  margin-top: 10px;
+}
+
+#ingredients ul li::before {
+  content: '- ';
+}
+
+#ingredients ul li {
+  position: relative;
+  left: -25px;
+}
+
+#cooking-info {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 25px;
+}
+
+#cooking-info img {
   width: 40%;
 }
